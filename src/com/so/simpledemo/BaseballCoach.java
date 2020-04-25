@@ -1,6 +1,13 @@
 package com.so.simpledemo;
 
 public class BaseballCoach implements Coach {
+	//DI-constructor
+	private FortuneService fortuneService;//define field
+	public BaseballCoach(FortuneService fortuneService) {//define constructor
+		this.fortuneService = fortuneService;
+	}
+	
+	
 	
 	@Override
 	public String getDailyWorkout() {

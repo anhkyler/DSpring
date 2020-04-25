@@ -12,9 +12,10 @@
     <!-- define the dependency -->
  	<bean id="myCoach"
  		class="com.so.simpledemo.TrackCoach">	 		
+ 		<constructor-arg ref="myFortuneService"></constructor-arg>
  	</bean>
-
-
+<!-- section 5 - DI and Ioc -->
+	<bean id="myFortuneService" class = "com.so.simpledemo.HappyFortuneService"></bean>
 </beans>
 
 
