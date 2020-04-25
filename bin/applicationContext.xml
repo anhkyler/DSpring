@@ -10,11 +10,14 @@
     <!-- Define your beans here -->
     
     <!-- define the dependency -->
+    <!-- BaseballCoach myCoach = new BaseballCoach(myFortuneService); -->
  	<bean id="myCoach"
  		class="com.so.simpledemo.TrackCoach">	 		
+ 		<constructor-arg ref="myFortuneService"></constructor-arg>
  	</bean>
-
-
+<!-- section 5 - DI and Ioc -->
+<!-- HappyFortuneService  myFortuneService = new HappyFortuneService(); -->
+	<bean id="myFortuneService" class = "com.so.simpledemo.HappyFortuneService"></bean>
 </beans>
 
 

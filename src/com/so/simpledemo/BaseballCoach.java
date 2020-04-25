@@ -13,4 +13,12 @@ public class BaseballCoach implements Coach {
 	public String getDailyWorkout() {
 		return "get 30 mins to workout";
 	}
+
+
+
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
