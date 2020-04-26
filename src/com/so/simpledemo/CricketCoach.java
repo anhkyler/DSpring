@@ -3,6 +3,25 @@ package com.so.simpledemo;
 public class CricketCoach implements Coach{
 //setter injection
 	private FortuneService fortuneService;
+	private String emailAddress;
+	private String team;
+	
+	public void setEmailAddress(String emailAddress) {
+		this.emailAddress = emailAddress;
+	}
+
+	public void setTeam(String team) {
+		this.team = team;
+	}
+
+	public String getEmailAddress() {
+		return emailAddress;
+	}
+
+	public String getTeam() {
+		return team;
+	}
+
 	public CricketCoach() {
 		System.out.println("inside the cricket coach");
 	}

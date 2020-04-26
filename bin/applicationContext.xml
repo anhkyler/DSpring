@@ -20,8 +20,12 @@
 	
 	
 	<bean id="myCricketCoach" class="com.so.simpledemo.CricketCoach">
-		<!-- set up injection ten cua properties-->
+		<!-- set up injection ten cua properties  tai vi inhect vao trong setter cua lop FortuneService-->
 		<property name="fortuneService" ref="myFortuneService" />
+		
+		<!-- inject literal value -->
+		<property name="emailAddress" value="bbs@gmail.com"></property>
+		<property name="team" value="bi bi bi"></property>
 	</bean>
 </beans>
 

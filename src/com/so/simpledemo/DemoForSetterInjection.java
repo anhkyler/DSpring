@@ -11,6 +11,8 @@ public class DemoForSetterInjection {
 		CricketCoach theCoach = context.getBean("myCricketCoach",CricketCoach.class);
 		//call method on the bean
 		
+		//lay gia tri tu trong injection value
+		System.out.println(theCoach.getEmailAddress());
 		//close the context
 		context.close();
 	}
