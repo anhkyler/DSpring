@@ -11,13 +11,18 @@
     
     <!-- define the dependency -->
     <!-- BaseballCoach myCoach = new BaseballCoach(myFortuneService); -->
- 	<bean id="myCoach"
- 		class="com.so.simpledemo.TrackCoach">	 		
+ 	<bean id="myCoach" class="com.so.simpledemo.TrackCoach">	 		
  		<constructor-arg ref="myFortuneService"></constructor-arg>
  	</bean>
 <!-- section 5 - DI and Ioc -->
 <!-- HappyFortuneService  myFortuneService = new HappyFortuneService(); -->
 	<bean id="myFortuneService" class = "com.so.simpledemo.HappyFortuneService"></bean>
+	
+	
+	<bean id="myCricketCoach" class="com.so.simpledemo.CricketCoach">
+		<!-- set up injection ten cua properties-->
+		<property name="fortuneService" ref="myFortuneService" />
+	</bean>
 </beans>
 
 
