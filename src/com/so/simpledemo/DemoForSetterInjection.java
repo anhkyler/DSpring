@@ -13,6 +13,11 @@ public class DemoForSetterInjection {
 		
 		//lay gia tri tu trong injection value
 		System.out.println(theCoach.getEmailAddress());
+		
+		
+		//lay gia tri tu trong property file.
+		System.out.println(theCoach.getPropertyEmail());
+		System.out.println(theCoach.getPropertyTeam());
 		//close the context
 		context.close();
 	}

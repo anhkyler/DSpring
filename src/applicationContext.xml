@@ -9,6 +9,9 @@
 
     <!-- Define your beans here -->
     
+    <!-- cainay la load properties file -->
+    <context:property-placeholder location="classpath:sport.properties" />
+    
     <!-- define the dependency -->
     <!-- BaseballCoach myCoach = new BaseballCoach(myFortuneService); -->
  	<bean id="myCoach" class="com.so.simpledemo.TrackCoach">	 		
@@ -24,8 +27,13 @@
 		<property name="fortuneService" ref="myFortuneService" />
 		
 		<!-- inject literal value -->
+		
 		<property name="emailAddress" value="bbs@gmail.com"></property>
 		<property name="team" value="bi bi bi"></property>
+		
+		
+		<property name="propertyEmail" value ="${foo.email}" />
+		<property name="propertyTeam" value ="${foo.team}" />
 	</bean>
 </beans>
 

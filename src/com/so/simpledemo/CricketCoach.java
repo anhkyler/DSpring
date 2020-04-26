@@ -44,5 +44,28 @@ public class CricketCoach implements Coach{
 		
 	}
 	
+	
+	//cai nay la load data from properties file
+	
+	private String propertyEmail;
+	private String propertyTeam;
+
+	public String getPropertyEmail() {
+		return propertyEmail;
+	}
+
+	public void setPropertyEmail(String propertyEmail) {
+		this.propertyEmail = propertyEmail;
+	}
+
+	public String getPropertyTeam() {
+		return propertyTeam;
+	}
+
+	public void setPropertyTeam(String propertyTeam) {
+		this.propertyTeam = propertyTeam;
+	}
+	
+	
 
 }
