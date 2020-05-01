@@ -7,7 +7,7 @@ public class DemoSection8 {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("section8-applicationContext.xml");
 		Coach theCoach =  context.getBean("tennisCoach",Coach.class);	
 		
-		Coach thCoachSetter = context.getBean("setterInjectionTennisCoach",Coach.class);
+		//Coach thCoachSetter = context.getBean("setterInjectionTennisCoach",Coach.class);
 		
 	}
 	

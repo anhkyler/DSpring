@@ -5,7 +5,10 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class SetterInjectionTennisCoach implements Coach {
-
+	
+	// field injection thi se lam la reflection.
+	
+	@Autowired
 	private FortuneService fortuneService;
 	
 	

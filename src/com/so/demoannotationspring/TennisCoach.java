@@ -5,15 +5,17 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class TennisCoach implements Coach {
-
+	//field injection se lam nhiem vu reflection behind the scene
+	@Autowired
 	private FortuneService fortuneService;
 	
 	
 	public TennisCoach() {
-		System.out.println("my Tennis code default constructor");
+		//System.out.println("my Tennis code default constructor");
+		System.out.println("khi su dung field injection se co cai nay");
 	}
 	//autowire la no se lay method nay ra ma khong can phai khai bao trong xml
-	@Autowired
+	//@Autowired
 	public TennisCoach(FortuneService fortuneService) {
 		this.fortuneService = fortuneService;
 	}
