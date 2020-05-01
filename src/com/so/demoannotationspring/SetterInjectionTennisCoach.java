@@ -29,10 +29,15 @@ public class SetterInjectionTennisCoach implements Coach {
 		return fortuneService;
 	}
 	//cai nay la setter injection
+//	@Autowired
+//	public void setFortuneService(FortuneService fortuneService) {
+//		this.fortuneService = fortuneService;
+//		System.out.println("inside setter injection");
+//	}
+	
 	@Autowired
-	public void setFortuneService(FortuneService fortuneService) {
-		this.fortuneService = fortuneService;
-		System.out.println("inside setter injection");
+	public void doSomeCrazyStuff() {
+		System.out.println("I am doing crazy stuffs!!");
 	}
 	
 }
